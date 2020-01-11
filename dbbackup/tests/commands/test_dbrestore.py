@@ -1,7 +1,7 @@
 """
 Tests for dbrestore command.
 """
-from mock import patch
+from unittest.mock import patch
 from tempfile import mktemp
 from shutil import copyfileobj
 

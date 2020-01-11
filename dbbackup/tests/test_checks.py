@@ -1,4 +1,4 @@
-from mock import patch
+from unittest.mock import patch
 from django.test import TestCase
 try:
     from dbbackup import checks

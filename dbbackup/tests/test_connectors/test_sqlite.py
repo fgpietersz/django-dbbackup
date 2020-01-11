@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from mock import patch, mock_open
+from unittest.mock import patch, mock_open
 
 from django.test import TestCase
 from django.utils.six import BytesIO

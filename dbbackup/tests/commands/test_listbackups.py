@@ -1,4 +1,4 @@
-from mock import patch
+from unittest.mock import patch
 from django.test import TestCase
 from django.core.management import execute_from_command_line
 from django.utils.six import StringIO

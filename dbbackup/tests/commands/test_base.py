@@ -3,7 +3,7 @@ Tests for base command class.
 """
 import os
 import logging
-from mock import patch
+from unittest.mock import patch
 from django.test import TestCase
 from django.utils import six
 from django.core.files import File

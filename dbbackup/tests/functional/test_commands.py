@@ -1,6 +1,6 @@
 import os
 import tempfile
-from mock import patch
+from unittest.mock import patch
 
 from django.test import TransactionTestCase as TestCase
 from django.core.management import execute_from_command_line
