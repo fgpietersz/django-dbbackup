@@ -1,7 +1,6 @@
 """
 Utility functions for dbbackup.
 """
-from __future__ import absolute_import, division, print_function, unicode_literals
 
 import sys
 import os
@@ -18,7 +17,7 @@ from datetime import datetime
 from django.core.mail import EmailMultiAlternatives
 from django.db import connection
 from django.http import HttpRequest
-from django.utils import six, timezone
+from django.utils import timezone
 
 try:
     from pipes import quote
@@ -27,7 +26,6 @@ except ImportError:
 
 from . import settings
 
-input = raw_input if six.PY2 else input  # noqa
 
 FAKE_HTTP_REQUEST = HttpRequest()
 FAKE_HTTP_REQUEST.META['SERVER_NAME'] = ''

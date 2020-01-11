@@ -1,6 +1,5 @@
 import re
 from django.core.checks import Warning, register, Tags
-from django.utils.six import string_types
 from dbbackup import settings
 
 W001 = Warning('Invalid HOSTNAME parameter',
@@ -30,7 +29,7 @@ def check_settings(app_configs, **kwargs):
     if not settings.HOSTNAME:
         errors.append(W001)
 
-    if not settings.STORAGE or not isinstance(settings.STORAGE, string_types):
+    if not settings.STORAGE or not isinstance(settings.STORAGE, str):
         errors.append(W002)
 
     if not callable(settings.FILENAME_TEMPLATE):
