@@ -3,7 +3,7 @@ flake8
 pylint
 coverage<4
 python-gnupg
-django-storages-redux
+django-storages
 pytz
 dj-database-url
 testfixtures
