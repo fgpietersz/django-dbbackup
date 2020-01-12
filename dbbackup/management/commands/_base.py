@@ -8,20 +8,16 @@ from shutil import copyfileobj
 
 import django
 from django.core.management.base import BaseCommand, CommandError
-from django.utils import six
 
 from ...storage import StorageError
 
-if six.PY2:
-    input = raw_input
-else:
-    long = int
+long = int
 
 USELESS_ARGS = ('callback', 'callback_args', 'callback_kwargs', 'metavar')
 TYPES = {
     'string': str,
     'int': int,
-    'long': long,
+    'long': int,
     'float': float,
     'complex': complex,
     'choice': list
